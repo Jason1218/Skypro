@@ -4,6 +4,7 @@
 <head>
 
 <link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
 <title>Skypro</title>
 
 </head>
@@ -14,9 +15,13 @@
 
   	<p title = "get trolled">Sublease houses at affordable costs for college students</p>
  	<div class = "a">
- 	<form>Enter your desired location:<br> <input type = "text" name = "location" align = "center"<br></form>
+ 	<form action="/myaction" method="post" id="locationform">
+ 		Enter your desired location:<br>
+ 		<input type = "text" id = "location" align = "center"<br>
+ 	</form>
 	
-	<button type="button" class = "searchButton" >Search</button>
+
+	<button type="button" class = "searchButton" onclick = "submitForm()">Search</button>
  	</div>
 
 

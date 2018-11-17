@@ -10,9 +10,12 @@ app.use(express.static('./public'))
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + home)));
 
-app.get('/:location', (req, res) => {
-	search_term = req.params.location;
-	console.log(search_term);
+app.post('/myaction', (req, res) => {
+	//console.log(req);
 });
+
+function searchFunction() {
+	alert('This is not finished yet!!');
+}
 
 app.listen(port, () => console.log('Example app listening on port ${port}!'));
