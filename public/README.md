@@ -1,2 +1,0 @@
-# Skypro
-finding affordable housing
